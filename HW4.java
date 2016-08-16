@@ -3,6 +3,14 @@
 //Original HiRiQ code by: Claude Crepeau
 import java.util.ArrayList;
 
+/*Structure of brute force solution:
+Constructed a binary tree. The parent node's right children are all possible configurations that
+are one move off of the parent's configurations. My program checks all the right children configurations,
+one-by-one, to see if they can be solved. If they do not lead to the solved configuration, the node and all 
+their children are deleted. The output is a list of moves to get from the initial configuration to the solved 
+configuration.
+*/
+
 public class HW4 {
  //additional classes at the bottom
   
